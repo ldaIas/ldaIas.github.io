@@ -11,16 +11,26 @@ h1 {
     background-image: url('https://raw.githubusercontent.com/ldaIas/ldaIas.github.io/master/sunset.jpeg');
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 100%;
 }
 
 .indices {
     text-align: center;
     font-size:x-large;
+    padding-bottom: 1.8%;
 }
 
 .indlink {
     margin: 5%;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.about {
+    border: 2px solid blue;
+    font-family: cursive;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: large;
+    letter-spacing: 1px;
 }
