@@ -1,0 +1,31 @@
+.header{
+    text-align: center;
+}
+
+.indices {
+    text-align: center;
+    font-size: x-large;
+    padding-bottom: 1.8%;
+}
+
+.indlink {
+    margin: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #7a7978;
+    color: #d9d9d9;
+}
+
+.abouthead {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.mode {
+    text-align: right;
+    background-image: url('https://raw.githubusercontent.com/ldaIas/ldaIas.github.io/master/images/light.png');
+    background-size: cover;
+    background-position: right;
+}
