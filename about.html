@@ -7,7 +7,27 @@
     <title>About Me</title>
 </head>
 
-<body>
+<body onload="loadImage()">
+    <! Store the light mode variable>
+    <script>
+        if(typeof(Storage) !== "undefined") {
+            console.log(localStorage.getItem("isLight") === null);
+            if(localStorage.getItem("isLight") === null){
+                localStorage.setItem("isLight", 1);
+            }
+            console.log(localStorage.getItem("isLight"));
+        }
+        body = document.getElementsByTagName("body")[0];
+        if(localStorage.getItem("isLight") == 1) {
+            body.style = 'background-color: #ededeb; color: #575755';
+        }
+        else{
+            body.style = 'background-color: #7a7978; color: #d9d9d9';
+        }
+
+    </script>
+
+
     <div class='header'>
         <h1>Put some header here</h1>
         <div class='indices'>
@@ -15,9 +35,9 @@
         </div>
     </div>
 
-    <div class='mode'>
-        <img id='light' src='./images/light.png' alt='Lightmode' onclick="changeLight()">
+    <div id='mode' class='mode' >
     </div>
+    
 
     <div id='QuickSum'>
         <h2 class='abouthead'>Quick Summary</h2>
